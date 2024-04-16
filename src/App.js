@@ -1,9 +1,9 @@
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Landing from './components/Landing';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+import Landing from './components/landing/Landing';
 import {Route, Routes} from 'react-router-dom';
-import {paths, button_paths} from './resources/scripts/variables';
+import {paths, paths_data1, paths_data2, button_paths, media_paths} from './resources/scripts/variables';
 
 function App() {
 
@@ -13,9 +13,9 @@ function App() {
           <Route exact path='/'
             element={
               <>
-                <Header />
+                <Header data1={paths_data1} data2={paths_data2}/>
                 <Landing />
-                <Footer />
+                <Footer data1={paths_data1} data2={paths_data2} data3={media_paths}/>
               </>
             }
           >
@@ -24,9 +24,9 @@ function App() {
             <Route path={item}
               element={
                 <>
-                  <Header />
+                  <Header data1={paths_data1} data2={paths_data2}/>
                   <Landing />
-                  <Footer />
+                  <Footer data1={paths_data1} data2={paths_data2} data3={media_paths}/>
                 </>
               }>
             </Route>
@@ -36,7 +36,7 @@ function App() {
               element={
                 <>
                   <Landing />
-                  <Footer />
+                  <Footer data1={paths_data1} data2={paths_data2} data3={media_paths}/>
                 </>
               }>
             </Route>

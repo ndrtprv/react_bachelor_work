@@ -1,12 +1,12 @@
 import React from 'react';
 import './Landing.css';
-import emp_avatar from '../resources/photos/people.png';
-import uaf_help from '../resources/photos/uaf_help.jpg';
-import humanitarian from '../resources/photos/humanitarian.jpg';
-import volunteer from '../resources/photos/volunteer.jpg';
-import about_fund from '../resources/photos/about_fund.jpg';
-import fundraise from '../resources/photos/fundraise.jpg';
-import results from '../resources/photos/results.jpg';
+import emp_avatar from '../../resources/photos/people.png';
+import uaf_help from '../../resources/photos/uaf_help.jpg';
+import humanitarian from '../../resources/photos/humanitarian.jpg';
+import volunteer from '../../resources/photos/volunteer.jpg';
+import about_fund from '../../resources/photos/about_fund.jpg';
+import fundraise from '../../resources/photos/fundraise.jpg';
+import results from '../../resources/photos/results.jpg';
 
 function Landing() {
   return (

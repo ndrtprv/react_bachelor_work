@@ -15,17 +15,17 @@ div.row.featurette.start_elem {
 }
 
 .img-uaf {
-    background: url("E:/VS_Projects/react_bachelor_work/src/components/elements/uaf_help.jpg");
+    background: url("../../resources/photos/uaf_help.jpg");
     opacity: 50%;
 }
 
 .img-hum {
-    background: url("E:/VS_Projects/react_bachelor_work/src/components/elements/humanitarian.jpg");
+    background: url("../../resources/photos/humanitarian.jpg");
     opacity: 50%;
 }
 
 .img-vol {
-    background: url("E:/VS_Projects/react_bachelor_work/src/components/elements/volunteer.jpg");
+    background: url("../../resources/photos/volunteer.jpg");
     opacity: 50%;
 }
 
