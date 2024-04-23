@@ -7,57 +7,13 @@ import volunteer from '../../resources/photos/volunteer.jpg';
 import about_fund from '../../resources/photos/about_fund.jpg';
 import fundraise from '../../resources/photos/fundraise.jpg';
 import results from '../../resources/photos/results.jpg';
+import ContactForm from './contact_form/ContactForm';
+import Carousel from './carousel/Carousel';
 
 function Landing() {
   return (
     <main>
-      <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" className="active" aria-current="true"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" className=""></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item">
-            <svg className="bd-placeholder-img img-uaf" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><image href={uaf_help} width="100%" height="100%" /></svg>
-            <div className="container">
-              <div className="carousel-caption text-start">
-                <h1 className='d-inline-block mb-1 mont'>Допомога ЗСУ</h1>
-                <p className='rob carous'>Підтримка Збройних Сил України є важливим вкладом у забезпечення національної безпеки та суверенітету, а також наближає перемогу у війні з агресором.</p>
-                <p className='rob-btn'><a className="btn btn-lg btn-primary" href="/">Підтримати ЗСУ</a></p>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item active">
-            <svg className="bd-placeholder-img img-hum" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><image href={humanitarian} width="100%" height="100%" /></svg>
-            <div className="container">
-              <div className="carousel-caption">
-                <h1 className='d-inline-block mb-1 mont'>Гуманітарна допомога</h1>
-                <p className='rob carous'>Наша спільна діяльність спрямована на полегшення страждань та покращення умов тих, хто потребує допомоги, у тому числі постраждалим від війни.</p>
-                <p className='rob-btn'><a className="btn btn-lg btn-primary" href="/">Пожертвувати</a></p>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <svg className="bd-placeholder-img img-vol" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><image href={volunteer} width="100%" height="100%" /></svg>
-            <div className="container">
-              <div className="carousel-caption text-end">
-                <h1 className='d-inline-block mb-1 mont'>Стати волонтером</h1>
-                <p className='rob carous'>Бажаєш також допомагати постраждалим від війни або Збройним Силам? Тоді долучайся до нашої команди волонтерів! Заповнюй анкету і стань одним з нас.</p>
-                <p className='rob-btn'><a className="btn btn-lg btn-primary" href="/">Приєднатися зараз</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Попередній</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Наступний</span>
-        </button>
-      </div>
+      <Carousel uaf_help={uaf_help} humanitarian={humanitarian} volunteer={volunteer} />
       <div className="container marketing">
         <div className="row featurette start_elem">
           <div className="col-md-7 txt_field">
@@ -115,39 +71,7 @@ function Landing() {
         </div>
         <hr className="featurette-divider"/>
         <div className="row featurette">
-          <div className="d-flex flex-column justify-content-center">
-            <h2 className="featurette-heading lat-h2">Зворотній зв'язок</h2>
-            <p className="lead">Якщо вас цікавлять певні питання, зв'яжіться з нами, заповнивши форму.</p>
-            <form action="/" method="post" id="form-box" className="p-2">
-              <div className="form-group input-group mb-2">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-user"></i></span>
-                </div>
-                <input type="text" name="name" className="form-control" placeholder="Введіть ваше ім'я" required />
-              </div>
-              <div className="form-group input-group mt-2 mb-2">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-envelope"></i></span>
-                </div>
-                <input type="email" name="email" className="form-control" placeholder="Введіть ваш email" required />
-              </div>
-              <div className="form-group input-group mt-2 mb-2">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-at"></i></span>
-                </div>
-                <input type="text" name="subject" className="form-control" placeholder="Тема листа" required />
-              </div>
-              <div className="form-group input-group mt-2 mb-2">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-comment-alt"></i></span>
-                </div>
-                <textarea name="msg" id="msg" className="form-control" placeholder="Ваше повідомлення..." cols="30" rows="4" required></textarea>
-              </div>
-              <div className="form-group mt-2">
-                <input type="submit" name="submit" id="submit" className="btn btn-primary btn-block" value="Відправити" />
-              </div>
-            </form>
-          </div>
+          <ContactForm />
         </div>
       </div>
     </main>

@@ -6,7 +6,7 @@ import NavigationPanel from './nav_panel/NavigationPanel';
 function Header(props) {
     return (
         <header className="sticky-top">
-            <NavigationPanel data1={props.data1} data2={props.data2} brand={brand}/>
+            <NavigationPanel data1={props.data1} data2={props.data2} data3={props.data3} brand={brand}/>
         </header>
     );
 }
