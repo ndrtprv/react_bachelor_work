@@ -19,7 +19,7 @@ function Landing() {
           <div className="col-md-7 txt_field">
             <h2 className="featurette-heading lat-h2">Про благодійний фонд</h2>
             <p className="lead">"ValorAid Network" - це благодійний фонд, який об'єднує зусилля для надання підтримки на передовій лінії ЗСУ та надання гуманітарної допомоги тим, хто постраждав від наслідків конфлікту. Наш фонд зобов'язаний підтримувати і вдягати героїв на фронті та протягом мирних днів надавати допомогу потребуючим для відновлення життя.</p>
-            <p className='rob-btn'><button type="button" class="btn btn-info">Докладніше</button></p>
+            <p className='rob-btn'><button type="button" className="btn btn-info">Докладніше</button></p>
           </div>
           <div className="col-md-5">
             <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><image href={about_fund} width="100%" height="100%" /></svg>
@@ -52,7 +52,7 @@ function Landing() {
           <div className="col-md-7 order-md-2 txt_field">
             <h2 className="featurette-heading lat-h2">Збори</h2>
             <p className="lead">Місце, де ви можете долучитися до нашої місії та внести свій внесок у підтримку ЗСУ та допомогу тим, хто постраждав від війни. Тут ви зможете знайти різноманітні можливості пожертвувань та долучитися до наших проектів для спільного досягнення позитивних змін.</p>
-            <p className='rob-btn'><button type="button" class="btn btn-info">Актуальні збори</button></p>
+            <p className='rob-btn'><button type="button" className="btn btn-info">Актуальні збори</button></p>
           </div>
           <div className="col-md-5 order-md-1">
             <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><image href={fundraise} width="100%" height="100%" /></svg>
@@ -63,7 +63,7 @@ function Landing() {
           <div className="col-md-7 txt_field">
             <h2 className="featurette-heading lat-h2">Звіти</h2>
             <p className="lead">Ми ділимося докладними звітами про використання пожертвувань та реалізовані проекти. Тут ви зможете дізнатися, як ваша підтримка сприяє покращенню життя воїнів ЗСУ та тих, хто потерпів від війни, і бачити конкретні результати нашої спільної діяльності.</p>
-            <p className='rob-btn'><button type="button" class="btn btn-info">Усі звіти</button></p>
+            <p className='rob-btn'><button type="button" className="btn btn-info">Усі звіти</button></p>
           </div>
           <div className="col-md-5">
             <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><image href={results} width="100%" height="100%" /></svg>

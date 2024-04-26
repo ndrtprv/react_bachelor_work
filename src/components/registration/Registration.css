@@ -1,0 +1,16 @@
+div.registration-field {
+    display: flex;
+    flex-direction: column;
+}
+
+div.registration-field:nth-last-of-type(3) {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.registration-field:nth-last-of-type(1) div div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}

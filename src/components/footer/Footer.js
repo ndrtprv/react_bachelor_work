@@ -8,7 +8,7 @@ function Footer(props) {
   const merged_data = {...props.data1, ...props.data2, ...props.data3};
 
   return (
-    <footer className="text-center text-white foot-top">
+    <footer className="footer text-center text-white foot-bottom">
       <div className="container">
         <section className="mt-5">
           <div className="row text-center d-flex justify-content-center pt-5">
