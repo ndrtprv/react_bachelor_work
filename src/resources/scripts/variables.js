@@ -1,5 +1,13 @@
-export const paths = ['/about', '/staff', '/fundraisings', '/results', '/contacts'];
-export const path = '/faq';
+import Header from "../../components/header/Header";
+import About from '../../components/about/About';
+import Staff from '../../components/staff/Staff';
+import Fundraisings from '../../components/fundraisings/Fundraisings';
+import Results from "../../components/results/Results";
+import Contacts from '../../components/contacts/Contacts';
+import FAQ from "../../components/faq/FAQ";
+import Login from '../../components/login/Login';
+import Registration from '../../components/registration/Registration';
+import Footer from "../../components/footer/Footer";
 
 export const paths_data1 = {
     '/about': 'Про фонд',
@@ -7,16 +15,11 @@ export const paths_data1 = {
 };
 
 export const paths_data2 = {
-    '/fundraisings': 'Збори',
+    '/fundraisings': 'Допомога',
     '/results': 'Звіти',
-    '/contacts': 'Контакти'
-};
-
-export const paths_data3 = {
+    '/contacts': 'Контакти',
     '/faq': 'FAQ'
 };
-
-export const button_paths = ['/login', '/signup'];
 
 export const questions = [
     {question: 'Як можу долучитися до благодійної діяльності фонду для підтримки українських військових?', answer: ''},
@@ -37,3 +40,48 @@ export const media_paths = {
     'fab fa-linkedin': 'https://www.linkedin.com/in/andrii-toporov-465829264/',
     'fab fa-github': 'https://github.com/ndrtprv'
 };
+
+export const comps = {
+    '/about': [
+        <Header data1={paths_data1} data2={paths_data2} />,
+        <About />,
+        <Footer data1={paths_data1} data2={paths_data2} data3={media_paths} />
+    ],
+    '/staff': [
+        <Header data1={paths_data1} data2={paths_data2} />,
+        <Staff />,
+        <Footer data1={paths_data1} data2={paths_data2} data3={media_paths} />
+    ],
+    '/fundraisings': [
+        <Header data1={paths_data1} data2={paths_data2} />,
+        <Fundraisings />,
+        <Footer data1={paths_data1} data2={paths_data2} data3={media_paths} />
+    ],
+    '/results': [
+        <Header data1={paths_data1} data2={paths_data2} />,
+        <Results />,
+        <Footer data1={paths_data1} data2={paths_data2} data3={media_paths} />
+    ],
+    '/contacts': [
+        <Header data1={paths_data1} data2={paths_data2} />,
+        <Contacts />,
+        <Footer data1={paths_data1} data2={paths_data2} data3={media_paths} />
+    ],
+    '/faq': [
+        <Header data1={paths_data1} data2={paths_data2} />,
+        <FAQ quests={questions} />,
+        <Footer data1={paths_data1} data2={paths_data2} data3={media_paths} />
+    ],
+    '/login': [
+        <Header data1={paths_data1} data2={paths_data2} />,
+        <Login />,
+        <Footer data1={paths_data1} data2={paths_data2} data3={media_paths} />
+    ],
+    '/signup': [
+        <Header data1={paths_data1} data2={paths_data2} />,
+        <Registration />,
+        <Footer data1={paths_data1} data2={paths_data2} data3={media_paths} />
+    ]
+};
+
+export const button_paths = ['/login', '/signup'];

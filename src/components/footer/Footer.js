@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Footer(props) {
 
   var cop_text = "© " + new Date().getFullYear() + " «ValorAid Network». Усі права захищені.";
-  const merged_data = {...props.data1, ...props.data2, ...props.data3};
+  const merged_data = {...props.data1, ...props.data2};
 
   return (
     <footer className="footer text-center text-white foot-bottom">
@@ -32,7 +32,7 @@ function Footer(props) {
           </div>
         </section>
         <section className="text-center mb-5">
-          {Object.entries(props.data4).map(([path, label]) =>
+          {Object.entries(props.data3).map(([path, label]) =>
             <Link to={label} className="text-white me-4">
               <i className={path}></i>
             </Link>

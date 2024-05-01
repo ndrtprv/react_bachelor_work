@@ -27,11 +27,6 @@ function NavigationPanel(props) {
                                 <Link to={path} className="nav-link lat">{label}</Link>
                             </li>
                         )}
-                        {Object.entries(props.data3).map(([path, label]) =>
-                            <li className="nav-item">
-                                <Link to={path} className="nav-link lat">{label}</Link>
-                            </li>
-                        )}
                     </ul>
                     <div className="nav navbar-nav navbar-right">
                         <Link to="/login" className="nav-link lat">
